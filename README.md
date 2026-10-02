@@ -13,7 +13,10 @@ A lightweight Chrome extension by **Zenit Software Group** that renders JSON dat
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind-4-38bdf8.svg)](https://tailwindcss.com/)
 
 ---
-[Demo](./live.webm)
+## 🎬 Demo
+
+[Video](https://github.com/user-attachments/assets/308b12b6-55fb-421d-80d0-9bedbe188321)
+
 
 ---
 
