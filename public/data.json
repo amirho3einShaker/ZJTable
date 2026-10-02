@@ -1,0 +1,352 @@
+[
+  {
+    "id": 1001,
+    "name": "Ali Rezaei",
+    "age": 28,
+    "email": "ali.rezaei@example.com",
+    "phone": "+98 912 345 6789",
+    "active": true,
+    "balance": 1250000,
+    "description": "کاربر فعال سیستم با سابقه خرید بالا و تعامل مستمر با پلتفرم در طول شش ماه گذشته که منجر به ارتقای سطح عضویت شده است.",
+    "address": {
+      "country": "Iran",
+      "city": "Tehran",
+      "street": "خیابان ولیعصر، کوچه بهار، پلاک ۱۲، واحد ۵",
+      "postalCode": "1968734512",
+      "coordinates": {
+        "lat": 35.6892,
+        "lng": 51.389,
+        "accuracy": "high",
+        "lastUpdated": "2024-11-15T08:30:00Z"
+      }
+    },
+    "orders": [
+      {
+        "orderId": "ORD-2024-0001",
+        "total": 450000,
+        "status": "delivered",
+        "items": [
+          { "sku": "SKU-100", "name": "Wireless Mouse", "qty": 2, "price": 120000 },
+          { "sku": "SKU-205", "name": "Mechanical Keyboard", "qty": 1, "price": 210000 }
+        ],
+        "shipping": {
+          "carrier": "Post Iran",
+          "trackingCode": "IR123456789",
+          "estimatedDays": 3
+        }
+      },
+      {
+        "orderId": "ORD-2024-0002",
+        "total": 890000,
+        "status": "pending",
+        "items": [
+          { "sku": "SKU-330", "name": "27-inch Monitor", "qty": 1, "price": 890000 }
+        ],
+        "shipping": null
+      }
+    ],
+    "preferences": {
+      "language": "fa",
+      "theme": "dark",
+      "notifications": {
+        "email": true,
+        "sms": false,
+        "push": true,
+        "channels": ["news", "promotions", "security"]
+      },
+      "tags": ["premium", "verified", "early-adopter"]
+    },
+    "lastLogin": "2025-01-20T14:22:11Z"
+  },
+  {
+    "id": 1002,
+    "name": "Abolfazl Karimi",
+    "age": 19,
+    "email": "",
+    "phone": "09101841525",
+    "active": false,
+    "balance": 0,
+    "description": null,
+    "address": {
+      "country": "Iran",
+      "city": "Isfahan",
+      "street": "",
+      "postalCode": "8134567890",
+      "coordinates": null
+    },
+    "orders": [],
+    "preferences": {
+      "language": "fa",
+      "theme": "light",
+      "notifications": {
+        "email": false,
+        "sms": false,
+        "push": false,
+        "channels": []
+      },
+      "tags": []
+    },
+    "lastLogin": null
+  },
+  {
+    "id": 1003,
+    "name": "Sara Mohammadi",
+    "age": 34,
+    "email": "sara.m@company.co",
+    "phone": "+98 935 111 2233",
+    "active": true,
+    "balance": 45800200,
+    "description": "مدیر محصول با تمرکز بر تجربه کاربری و تحلیل داده. مسئول طراحی و اجرای نقشه راه محصول در سه فصل متوالی و هماهنگی بین تیم‌های فنی، طراحی و بازاریابی برای رسیدن به اهداف تعیین‌شده سازمانی.",
+    "address": {
+      "country": "Iran",
+      "city": "Shiraz",
+      "street": "بلوار زند، ساختمان پارس، طبقه ۷",
+      "postalCode": "7145678901",
+      "coordinates": {
+        "lat": 29.5918,
+        "lng": 52.5837,
+        "accuracy": "medium",
+        "lastUpdated": "2024-09-01T12:00:00Z"
+      }
+    },
+    "orders": [
+      {
+        "orderId": "ORD-2024-0010",
+        "total": 12300000,
+        "status": "delivered",
+        "items": [
+          { "sku": "SKU-900", "name": "Laptop Pro 16\"", "qty": 1, "price": 11500000 },
+          { "sku": "SKU-901", "name": "Laptop Sleeve", "qty": 1, "price": 300000 },
+          { "sku": "SKU-902", "name": "USB-C Hub", "qty": 1, "price": 500000 }
+        ],
+        "shipping": {
+          "carrier": "Tipax",
+          "trackingCode": "TX-9988776655",
+          "estimatedDays": 1
+        }
+      }
+    ],
+    "preferences": {
+      "language": "en",
+      "theme": "system",
+      "notifications": {
+        "email": true,
+        "sms": true,
+        "push": true,
+        "channels": ["news", "security", "reports", "weekly-digest", "product-updates"]
+      },
+      "tags": ["admin", "manager", "power-user", "beta-tester"]
+    },
+    "lastLogin": "2025-01-21T09:15:42Z"
+  },
+  {
+    "id": 1004,
+    "name": "Mohammad Hosseini",
+    "age": 45,
+    "email": "m.hosseini@enterprise.ir",
+    "phone": "+98 21 8877 6655",
+    "active": true,
+    "balance": 987654321,
+    "description": "مدیرعامل شرکت با بیش از بیست سال تجربه در حوزه فناوری اطلاعات و مدیریت تیم‌های بزرگ توسعه نرم‌افزار. مسئول تصمیم‌گیری‌های استراتژیک، جذب سرمایه و توسعه بازارهای بین‌المللی. دارای مدرک MBA از دانشگاه صنعتی شریف و چندین گواهی‌نامه بین‌المللی در حوزه مدیریت پروژه و رهبری سازمانی. علاقه‌مند به سرمایه‌گذاری در استارتاپ‌های حوزه فین‌تک و هوش مصنوعی.",
+    "address": {
+      "country": "Iran",
+      "city": "Tehran",
+      "street": "میدان آرژانتین، برج商业، طبقه ۲۲",
+      "postalCode": "1518643711",
+      "coordinates": {
+        "lat": 35.7448,
+        "lng": 51.4215,
+        "accuracy": "high",
+        "lastUpdated": "2025-01-15T07:00:00Z"
+      }
+    },
+    "orders": [
+      {
+        "orderId": "ORD-2023-9999",
+        "total": 250000000,
+        "status": "delivered",
+        "items": [
+          { "sku": "ENT-001", "name": "Enterprise License", "qty": 1, "price": 200000000 },
+          { "sku": "ENT-002", "name": "Premium Support 3Y", "qty": 1, "price": 50000000 }
+        ],
+        "shipping": {
+          "carrier": "DHL",
+          "trackingCode": "DHL-XX-0011223344",
+          "estimatedDays": 0
+        }
+      },
+      {
+        "orderId": "ORD-2024-0500",
+        "total": 15500000,
+        "status": "processing",
+        "items": [
+          { "sku": "SKU-450", "name": "Conference Room Setup", "qty": 1, "price": 15500000 }
+        ],
+        "shipping": {
+          "carrier": "Internal",
+          "trackingCode": null,
+          "estimatedDays": 7
+        }
+      }
+    ],
+    "preferences": {
+      "language": "fa",
+      "theme": "dark",
+      "notifications": {
+        "email": true,
+        "sms": false,
+        "push": false,
+        "channels": ["security", "billing", "executive-summary"]
+      },
+      "tags": ["owner", "vip", "enterprise"]
+    },
+    "lastLogin": "2025-01-21T06:45:00Z"
+  },
+  {
+    "id": 1005,
+    "name": "Zahra Ahmadi",
+    "age": 22,
+    "email": "zahra.ahmadi@student.ir",
+    "phone": "+98 901 222 3344",
+    "active": true,
+    "balance": 35000,
+    "description": "دانشجوی مهندسی کامپیوتر، علاقه‌مند به یادگیری ماشین",
+    "address": {
+      "country": "Iran",
+      "city": "Tabriz",
+      "street": "خیابان دانشگاه، خوابگاه شماره ۳",
+      "postalCode": "5154687312",
+      "coordinates": {
+        "lat": 38.0800,
+        "lng": 46.2919,
+        "accuracy": "low",
+        "lastUpdated": "2024-12-20T18:30:00Z"
+      }
+    },
+    "orders": [
+      {
+        "orderId": "ORD-2024-0777",
+        "total": 35000,
+        "status": "delivered",
+        "items": [
+          { "sku": "SKU-010", "name": "Notebook", "qty": 1, "price": 35000 }
+        ],
+        "shipping": {
+          "carrier": "Post Iran",
+          "trackingCode": "IR-555666777",
+          "estimatedDays": 5
+        }
+      }
+    ],
+    "preferences": {
+      "language": "fa",
+      "theme": "light",
+      "notifications": {
+        "email": true,
+        "sms": false,
+        "push": true,
+        "channels": ["news", "courses", "scholarships"]
+      },
+      "tags": ["student", "verified"]
+    },
+    "lastLogin": "2025-01-19T22:10:05Z"
+  },
+  {
+    "id": 1006,
+    "name": "Reza Naderi",
+    "age": 51,
+    "email": "reza.naderi@retired.ir",
+    "phone": "+98 21 2233 4455",
+    "active": false,
+    "balance": 15000000,
+    "description": null,
+    "address": {
+      "country": "Iran",
+      "city": "Mashhad",
+      "street": "بلوار وکیل‌آباد، نبش کوچه ۱۷",
+      "postalCode": "9177654321",
+      "coordinates": {
+        "lat": 36.2605,
+        "lng": 59.6168,
+        "accuracy": "high",
+        "lastUpdated": "2023-05-10T10:00:00Z"
+      }
+    },
+    "orders": [],
+    "preferences": {
+      "language": "fa",
+      "theme": "light",
+      "notifications": {
+        "email": false,
+        "sms": false,
+        "push": false,
+        "channels": []
+      },
+      "tags": ["legacy", "inactive"]
+    },
+    "lastLogin": "2023-05-10T10:00:00Z"
+  },
+  {
+    "id": 1007,
+    "name": "Niloofar Sadeghi",
+    "age": 31,
+    "email": "n.sadeghi@design.studio",
+    "phone": "+98 912 888 9900",
+    "active": true,
+    "balance": 2540000,
+    "description": "طراح گرافیک و مدیر هنری استودیو طراحی با تمرکز بر هویت بصری برندهای نوپا و توسعه سیستم‌های طراحی دیجیتال. سابقه همکاری با بیش از چهل استارتاپ در حوزه‌های مختلف از فین‌تک تا سلامت دیجیتال.",
+    "address": {
+      "country": "Iran",
+      "city": "Karaj",
+      "street": "عظیمیه، بلوار کاج، ساختمان آفتاب",
+      "postalCode": "3149776655",
+      "coordinates": {
+        "lat": 35.8328,
+        "lng": 50.9915,
+        "accuracy": "medium",
+        "lastUpdated": "2024-11-05T14:20:00Z"
+      }
+    },
+    "orders": [
+      {
+        "orderId": "ORD-2024-0300",
+        "total": 890000,
+        "status": "delivered",
+        "items": [
+          { "sku": "SKU-501", "name": "Graphics Tablet", "qty": 1, "price": 890000 }
+        ],
+        "shipping": {
+          "carrier": "Tipax",
+          "trackingCode": "TX-1122334455",
+          "estimatedDays": 2
+        }
+      },
+      {
+        "orderId": "ORD-2024-0450",
+        "total": 1650000,
+        "status": "delivered",
+        "items": [
+          { "sku": "SKU-502", "name": "Color Calibrator", "qty": 1, "price": 1250000 },
+          { "sku": "SKU-503", "name": "Drawing Glove", "qty": 2, "price": 200000 }
+        ],
+        "shipping": {
+          "carrier": "Post Iran",
+          "trackingCode": "IR-999888777",
+          "estimatedDays": 4
+        }
+      }
+    ],
+    "preferences": {
+      "language": "en",
+      "theme": "dark",
+      "notifications": {
+        "email": true,
+        "sms": true,
+        "push": true,
+        "channels": ["news", "design-weekly", "job-offers"]
+      },
+      "tags": ["creative", "verified", "pro"]
+    },
+    "lastLogin": "2025-01-21T11:00:30Z"
+  }
+]

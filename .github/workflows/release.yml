@@ -1,0 +1,42 @@
+name: Build & Attach Extension to Release
+
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    name: Build Chrome Extension
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build extension
+        run: npm run build
+
+      - name: Create zip archive
+        run: |
+          cd dist
+          zip -r ../ZJTable-${{ github.event.release.tag_name }}.zip .
+
+      - name: Upload zip to release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: ZJTable-${{ github.event.release.tag_name }}.zip
+          fail_on_unmatched_files: true

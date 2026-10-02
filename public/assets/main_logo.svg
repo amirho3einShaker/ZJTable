@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="ZJTable">
+  <defs>
+    <linearGradient id="zjBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#12924c"/>
+      <stop offset="1" stop-color="#0b5529"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="64" height="64" rx="14" fill="url(#zjBg)"/>
+
+  <path d="M26 14
+           C 21 14 19 16 19 21
+           L 19 26
+           C 19 29 18 30.5 14.5 31.5
+           C 18 32.5 19 34 19 37
+           L 19 43
+           C 19 48 21 50 26 50"
+        fill="none" stroke="#ffffff" stroke-width="3.2"
+        stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="31" y="17"    width="21" height="6.5" rx="2" fill="#ffffff"/>
+  <rect x="31" y="28.75" width="21" height="6.5" rx="2" fill="#ffffff" opacity="0.82"/>
+  <rect x="31" y="40.5"  width="21" height="6.5" rx="2" fill="#ffffff" opacity="0.64"/>
+</svg>

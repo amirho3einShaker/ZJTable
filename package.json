@@ -1,0 +1,50 @@
+{
+  "name": "ZJTable",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Turn any JSON into a beautiful table. A Chrome extension by Zenit Software Group.",
+  "keywords": [
+    "json",
+    "viewer",
+    "table",
+    "chrome-extension",
+    "vue",
+    "vite",
+    "tailwindcss",
+    "zenit"
+  ],
+  "author": {
+    "name": "AmirHossein Shaker",
+    "url": "https://github.com/amirho3einShaker"
+  },
+  "contributors": [
+    {
+      "name": "Aboulfazl Cheloyi",
+      "url": "https://github.com/cheloei"
+    }
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/amirho3einShaker/ZJTable#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amirho3einShaker/ZJTable.git"
+  },
+  "bugs": {
+    "url": "https://github.com/amirho3einShaker/ZJTable/issues"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.5.42"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "tailwindcss": "^4.3.3",
+    "vite": "^6.0.7"
+  }
+}

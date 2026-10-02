@@ -1,0 +1,241 @@
+.excel-wrapper {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  border: 1px solid #d4d4d8;
+  border-radius: 8px;
+  background: #ffffff;
+  font-family: 'Segoe UI', 'Calibri', ui-sans-serif, system-ui, sans-serif;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.excel-wrapper.is-nested {
+  height: auto;
+  max-height: none;
+  overflow: visible;
+  border-radius: 6px;
+  border-color: #cbd5e1;
+  box-shadow: none;
+  background: #fafafa;
+  margin: 2px 0;
+}
+
+table {
+  min-width: 100%;
+  width: max-content;
+  border-collapse: collapse;
+  font-size: 13px;
+  color: #1f2937;
+  text-align: center;
+  table-layout: auto;
+}
+
+.is-nested table {
+  font-size: 12px;
+}
+
+thead th {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  padding: 8px 14px;
+  font-weight: 600;
+  font-size: 12px;
+  color: #ffffff;
+  background: #107c41;
+  border-right: 1px solid rgba(255, 255, 255, 0.12);
+  border-bottom: 1px solid #0e6a37;
+  white-space: nowrap;
+  text-align: center;
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+thead th:last-child {
+  border-right: none;
+}
+
+.is-nested thead th {
+  background: #217346;
+  font-size: 11px;
+  padding: 6px 10px;
+}
+
+thead th.row-num {
+  width: 40px;
+  min-width: 40px;
+  max-width: 40px;
+  background: #0e6a37;
+  font-weight: 700;
+  font-size: 11px;
+  color: #d1fae5;
+}
+
+.th-label {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.col-resizer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 6px;
+  height: 100%;
+  cursor: col-resize;
+  user-select: none;
+  background: transparent;
+  z-index: 4;
+}
+
+.col-resizer::after {
+  content: '';
+  position: absolute;
+  top: 20%;
+  bottom: 20%;
+  left: 50%;
+  width: 2px;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 2px;
+  transition: background 0.12s ease;
+}
+
+
+tbody td {
+  padding: 0;
+  border-right: 1px solid #e5e7eb;
+  border-bottom: 1px solid #e5e7eb;
+  vertical-align: top;
+  background: #ffffff;
+  transition: background 0.12s ease;
+  overflow: hidden;
+}
+
+tbody td:last-child {
+  border-right: none;
+}
+
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+tbody tr:nth-child(even) td {
+  background: #fafbfc;
+}
+
+
+.is-nested tbody tr:hover td {
+  background: #ecfdf5;
+}
+
+tbody td.row-num {
+  width: 40px;
+  min-width: 40px;
+  max-width: 40px;
+  background: #f3f4f6;
+  color: #6b7280;
+  font-weight: 600;
+  font-size: 11px;
+  text-align: center;
+  padding: 8px 0;
+  user-select: none;
+  position: sticky;
+  left: 0;
+  z-index: 1;
+  border-right: 1px solid #d1d5db;
+}
+
+tbody tr:nth-child(even) td.row-num {
+  background: #eef0f2;
+}
+
+
+.cell {
+  padding: 8px 14px;
+  max-width: 500px;
+  white-space: normal;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+  line-height: 1.4;
+  min-height: 32px;
+  text-align: center;
+  display: block;
+}
+
+.cell.num {
+  color: #0e6a37;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.cell.text {
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+}
+
+.cell.text.expanded {
+  display: block;
+  white-space: normal;
+  text-align: center;
+  padding: 10px 14px;
+  background: #ecfdf5;
+  color: #065f46;
+  font-weight: 500;
+  box-shadow: inset 0 0 0 2px #107c41;
+  text-decoration: none;
+  animation: expand-in 0.15s ease-out;
+}
+
+@keyframes expand-in {
+  from { background: #d1fae5; }
+  to   { background: #ecfdf5; }
+}
+
+.cell.empty {
+  color: #d1d5db;
+  font-style: italic;
+  cursor: default;
+}
+
+.nested {
+  display: block;
+  padding: 4px;
+  width: 100%;
+}
+
+.is-nested .cell {
+  padding: 6px 10px;
+  min-height: 28px;
+  font-size: 12px;
+  max-width: 500px;
+}
+
+.is-nested .cell.text.expanded {
+  box-shadow: inset 0 0 0 2px #217346;
+}
+
+.excel-wrapper::-webkit-scrollbar {
+  height: 12px;
+  width: 12px;
+}
+
+.excel-wrapper::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+.excel-wrapper::-webkit-scrollbar-thumb {
+  background: #c7c7cc;
+  border-radius: 2px;
+  border: 3px solid #f1f5f9;
+}
+
+
+.excel-wrapper {
+  scrollbar-width: thin;
+  scrollbar-color: #c7c7cc #f1f5f9;
+}

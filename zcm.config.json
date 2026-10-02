@@ -1,0 +1,48 @@
+{
+  "_readme": [
+    "ZCombine configuration — https://github.com/cheloei/ZCM",
+    "",
+    "root              Directory to scan.",
+    "                  Relative paths resolve from THIS file's folder.",
+    "                  Use \".\" for the same folder, or an absolute path.",
+    "",
+    "target            Patterns to INCLUDE.",
+    "                    \"*.ext\"     every file with that extension",
+    "                    \"name.ext\"  that exact filename only",
+    "",
+    "ignore            Patterns to EXCLUDE.",
+    "                    \"name/\"     a directory (never entered)",
+    "                    \"name.ext\"  that exact filename only",
+    "",
+    "output_file       Name of the merged output (created next to this file).",
+    "strip_empty_lines Remove blank / whitespace-only lines.",
+    "draw_mind_map     Prepend a project tree of matched files.",
+    "git_ignore        Append output_file to .gitignore next to this file.",
+    "",
+    "Note: this file and the output are ALWAYS excluded from the merge,",
+    "      regardless of the patterns above."
+  ],
+  "root": ".",
+  "target": [
+    "*.vue",
+    "*.js",
+    "*.json",
+    "*.css",
+    "*.ts",
+    "*.scss",
+    "yml",
+    "md"
+  ],
+  "ignore": [
+    "node_modules/",
+    ".git/",
+    "package-lock.json",
+    ".nuxt/",
+    ".output/",
+    "dist/"
+  ],
+  "output_file": "zcm_output.txt",
+  "strip_empty_lines": true,
+  "draw_mind_map": true,
+  "git_ignore": true
+}

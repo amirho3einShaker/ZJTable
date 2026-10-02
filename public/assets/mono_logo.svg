@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="ZJTable">
+  <path d="M26 14
+           C 21 14 19 16 19 21
+           L 19 26
+           C 19 29 18 30.5 14.5 31.5
+           C 18 32.5 19 34 19 37
+           L 19 43
+           C 19 48 21 50 26 50"
+        fill="none" stroke="currentColor" stroke-width="3.2"
+        stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="31" y="17"    width="21" height="6.5" rx="2" fill="currentColor"/>
+  <rect x="31" y="28.75" width="21" height="6.5" rx="2" fill="currentColor" opacity="0.75"/>
+  <rect x="31" y="40.5"  width="21" height="6.5" rx="2" fill="currentColor" opacity="0.5"/>
+</svg>
